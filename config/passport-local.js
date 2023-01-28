@@ -17,6 +17,8 @@ passport.use(new LocalStrategy({
                 return done(err); 
             }
             if (!user || user.password != password) { 
+                console.log(user.email);
+                console.log(user.password);
                 console.log('Invalid user ame or password');
                 return done(null, false); 
             }

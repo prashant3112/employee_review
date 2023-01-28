@@ -18,6 +18,7 @@ module.exports.createUser = async function(req, res){
             console.log("user already exist");
             return res.redirect('/users/register');
         }else{
+            console.log(req.body);
             await User.create({
                 name : req.body.name,
                 email : req.body.email,
@@ -25,7 +26,7 @@ module.exports.createUser = async function(req, res){
                 password : req.body.password
             });
             console.log('User created successfully');
-            if(req.user.isAdmin){
+            if(req.body.isAdmin){
                 return res.redirect('/');
             }
             return res.redirect('/users/login');
@@ -47,9 +48,12 @@ module.exports.createSession = function(req, res){
 
 // destroying session
 module.exports.destroySession = function(req, res){
-    req.logout();
-    console.log('Logged Out');
-    return res.redirect('/users/login');
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        console.log('Logged Out');
+        return res.redirect('/users/login');
+    });
+    
 }
 
 
