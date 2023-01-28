@@ -3,20 +3,21 @@ A great project which is use to submit review against each other for employees. 
 he can delete any of employee and he can create any employee. An admin can create any employee to admin.
 
 
-Features
-Admin View
-Add/ remove/ update/ view employees
+Features:
 
-Add/update/view performance reviews
+ Admin View
+  1.Add/ remove/ update/ view employees
 
-Assign employees to participate in another employee's performance review
+  2.Add/update/view performance reviews
 
-Admin can add new employee also by registering
+  3.Assign employees to participate in another employee's performance review
 
-Employee View
+  4.Admin can add new employee also by registering
 
-List of performance review requiring feedback
-Submit feedback
-Login
+ Employee View
+  a.List of performance review requiring feedback
+  b.Submit feedback
+ 
+ Login
 
-Register
+ Register
