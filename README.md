@@ -5,7 +5,7 @@ he can delete any of employee and he can create any employee. An admin can creat
 
 Features:
 
- Admin View
+ Admin View --
   1.Add/ remove/ update/ view employees
 
   2.Add/update/view performance reviews
@@ -14,7 +14,7 @@ Features:
 
   4.Admin can add new employee also by registering
 
- Employee View
+ Employee View--
   a.List of performance review requiring feedback
   b.Submit feedback
  
